@@ -1,11 +1,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-export const routes = [{ name: 'home', path: './projects/0-gallery' }]
+export const routes = [
+  { name: 'home', path: '/', mainFile: './projects/0-gallery/index.vue' },
+]
 
 export const router = createRouter({
   history: createWebHashHistory(),
-  routes: routes.map((r) => ({
-    path: `/${r.name}`,
-    component: () => import(r.path),
+  routes: routes.map(({ path, mainFile }) => ({
+    path,
+    component: () => import(/* @vite-ignore */ mainFile),
   })),
 })
