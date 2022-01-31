@@ -5,8 +5,8 @@ export const projects = [
     mainFile: './projects/1-expanding-cards/index.vue',
   },
   {
-    name: 'Progress Steps',
-    path: '/2-progress-steps',
-    mainFile: './projects/2-progress-steps/index.vue',
+    name: 'Form Validator',
+    path: '/2-form-validator',
+    mainFile: './projects/2-form-validator/index.vue',
   },
 ]
