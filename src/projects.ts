@@ -9,4 +9,9 @@ export const projects = [
     path: '/2-form-validator',
     mainFile: './projects/2-form-validator/index.vue',
   },
+  {
+    name: 'Custom Video Player',
+    path: '/3-custom-video-player',
+    mainFile: './projects/3-custom-video-player/index.vue',
+  },
 ]
