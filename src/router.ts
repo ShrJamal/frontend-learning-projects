@@ -1,8 +1,8 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import { projects } from './projects'
 
 export const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes: [
     { path: '/', component: () => import(/* @vite-ignore */ './HomePage.vue') },
     ...projects.map(({ path, mainFile }) => ({
