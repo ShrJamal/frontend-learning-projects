@@ -1,0 +1,9 @@
+@use 'variables.scss' as *;
+
+// Bootstrap Customizations
+$primary: $mainPink;
+$secondary: $mainYellow;
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+@import 'https://fonts.googleapis.com/css?family=Kaushan+Script';

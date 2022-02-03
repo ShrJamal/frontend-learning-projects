@@ -3,7 +3,7 @@ import { projects } from './projects'
 </script>
 <template>
   <div class="container">
-    <h1>50 Project 50 Days</h1>
+    <h1>Learn Frontend by projects</h1>
     <div class="projects">
       <div v-for="p in projects" :key="p.name">
         <div class="project-item">
@@ -16,7 +16,7 @@ import { projects } from './projects'
   </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .container {
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ import { projects } from './projects'
   display: flex;
   align-items: center;
   justify-content: center;
-  background: gray;
+  border: 2px solid gray;
   text-align: center;
 }
 </style>
